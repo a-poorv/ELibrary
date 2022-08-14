@@ -1,0 +1,74 @@
+﻿@using Microsoft.AspNetCore.Http
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - E_Library</title>
+        <link rel="stylesheet" href="~/css/StyleSheetUserDash.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="flex-container">
+         <img src="~/imgspath/imgs/books1.png"  style="height:50px; margin-left:50px" />
+        <h3>Library Management System</h3>
+
+        <form  asp-controller="Logins" asp-action="Index">
+                 <button class="btn-grad"> Logout</button>
+            </form>
+
+    </div>
+
+    <h3>Hello,@Context.Session.GetString("UserName")</h3>
+
+      <div class="navbar"> 
+            <a class="nav-link "  role="button" asp-controller="LendRequests" asp-action="IssuedRecords" aria-haspopup="true" aria-expanded="false">
+                       Issued books
+                     </a>
+
+        <a class="nav-link" asp-controller="Books" asp-action="UserDash" role="button"  aria-haspopup="true" aria-expanded="false">
+                       View books
+                     </a>
+
+           <a class="nav-link" asp-controller="LendRequests" asp-action="AllRequests" role="button"  aria-haspopup="true" aria-expanded="false">
+                       Records
+                     </a>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    @*<footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - LibraryManagementSystem - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>*@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+    </body>
+    </html>

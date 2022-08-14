@@ -1,0 +1,88 @@
+﻿
+@model E_Library.Controllers.LoginsController;
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Logins/_Layout.cshtml";
+}
+
+
+
+
+    <html>
+    <head>
+
+     
+
+        
+        
+         
+        
+        <body>
+          <div class="flex-container">
+               <img src="~/imgspath/imgs/books1.png"  style="height:50px; margin-left:50px" />
+                <h3>Library Management System</h3>
+
+            <form  asp-controller="Logins" asp-action="Index">
+                 <button class="btn-grad"> LogIn</button>
+            </form>
+
+            </div>
+
+
+
+
+       
+
+
+
+
+          
+            <form method="post" asp-controller="Logins" asp-action="Index">
+               @*<div class="imgcontainer">
+                  <img src="~/imgspath/imgs/sign-up.png" class="avatar">
+               </div>*@
+
+               <div class="card">
+                   <div class="card-content">
+
+               <div class="imgcontainer">
+                  <img src="~/imgspath/imgs/sign-up.png" class="avatar">
+               </div>
+
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="username" required>
+              <br/> 
+
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="password" required>
+                    
+                <br/>
+
+                  <button type="submit">Login</button>
+                  <br/><br/>
+                  
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+                </div>
+             </div>
+              
+<div>
+              @ViewBag.Message
+     </div>          
+              </form>
+              
+              
+
+
+
+
+
+
+
+
+        </body>
+    </head>
+</html>

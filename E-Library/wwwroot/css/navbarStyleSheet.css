@@ -1,0 +1,18 @@
+﻿
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+    .navbar a {
+       
+        font-size: 14px;
+        color: white;
+        text-align: center;
+        padding: 10px 12px;
+        text-decoration: none;
+    }
+       
+    
+   

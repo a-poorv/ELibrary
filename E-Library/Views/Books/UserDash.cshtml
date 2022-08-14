@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_ViewUserDashLayout.cshtml";
+}
+
+
+          
+               
+
+
+<form class="search">
+        <input type="text" placeholder="Search.." name="searchstring">
+        <button type="submit"><i class="fa fa-search"></i></button>
+          @*<input type="submit" placeholder="search.."/>*@
+      </form>
+      
+
+
+
+     @foreach(var item in Model){
+      <div class="card">
+       
+         <img src="@item.Imageurl" alt="Card image cap" height="60%">
+       <div class="container">
+         <h4>Title:@item.BookTitle</h4> 
+        <p>Author:@item.Author.AuthorName</p> 
+        <p>Category:@item.Category</p> 
+          <p>No.Of.Copies:@item.NoOfCopies</p> 
+
+        <form  asp-controller="LendRequests"  asp-action="RequestToLend" asp-route-bookid="@item.BookId">
+        <input type="submit" class="btn-size" value="RequestBook"/>
+        </form>
+
+        </div>
+       
+      
+     
+     </div>
+
+
+        }

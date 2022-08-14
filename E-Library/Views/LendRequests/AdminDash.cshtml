@@ -1,0 +1,57 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model IEnumerable<E_Library.Models.LendRequest>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+  
+
+      <table>
+        <tr>
+          <th>BookID</th>
+          <th>Username</th>
+          <th>BookName</th>
+          <th>Action</th>
+        
+        </tr>
+      
+      @foreach(var item in Model)
+            {
+       @* if(@item.LendStatus=="Requested"){*@
+        
+            <tr>
+                <td>@item.BookId</td>
+          <td>@item.User.UserName</td>
+          <td>@item.Book.BookTitle</td>
+        
+          <td>
+
+        
+        <form  asp-controller="LendRequests"  asp-action="Approval" asp-route-lendid="@item.LenId">
+        <input type="submit" class="button1" value="Approve"/>
+         
+        </form>
+
+   
+         <form  asp-controller="LendRequests"  asp-action="Reject" asp-route-lendid="@item.LenId">
+        <input type="submit" class="button2" value="Reject"/>
+         
+        </form>
+            
+        </td>
+        </tr>
+        
+           @* } *@
+        
+       }
+       
+        
+      </table>
+
