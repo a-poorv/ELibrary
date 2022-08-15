@@ -42,7 +42,7 @@ Library Management System is a Online Library Web Application made using **ASP.N
 * .NET Framework Version **5.0.17**
 
 ### Packages
->Inside your Visual Stdio Navigate to Tools > NuGet Package Manager > Manage NuGet Packages for Solution and install these packages
+>Inside your Visual Studio Navigate to Tools > NuGet Package Manager > Manage NuGet Packages for Solution and install these packages
 
 * Microsoft.EntityFrameworkCore Version **5.0.17**
 * Microsoft.EntityFrameworkCore.Design Version **5.0.17**
