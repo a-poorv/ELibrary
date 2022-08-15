@@ -12,6 +12,7 @@ Library Management System is a Online Library Web Application made using **ASP.N
 * Can views all the books and Request it.
 * Can view all the issued books and Return it.
 * Can view all his past Records/Requests.
+* Can Search book on basis of Publisher/Author Name,BookTitle etc.
 
 > Landing Page:
 
@@ -28,6 +29,10 @@ Library Management System is a Online Library Web Application made using **ASP.N
 > ViewBooks Page:
 
 ![Screenshot (32)](https://user-images.githubusercontent.com/57533030/184602001-10f6c1ea-c737-4000-9956-ee1944062613.png)
+
+> Search Feature in ViewBooks Page :
+
+![Screenshot (38)](https://user-images.githubusercontent.com/57533030/184606602-2407321e-5526-4eb1-b5c3-d119d7d9d53d.png)
 
 ## To Get Started 
 
