@@ -21,6 +21,10 @@ Library Management System is a Online Library Web Application made using **ASP.N
 
 ![Screenshot (33)](https://user-images.githubusercontent.com/57533030/184601730-45868f59-d701-44a5-8299-99d10ff1e6eb.png)
 
+> Admin Dashboard Page:
+
+![Screenshot (35)](https://user-images.githubusercontent.com/57533030/184605364-e94b355d-9877-4abe-b7e6-7065cd7237f6.png)
+
 > ViewBooks Page:
 
 ![Screenshot (32)](https://user-images.githubusercontent.com/57533030/184602001-10f6c1ea-c737-4000-9956-ee1944062613.png)
