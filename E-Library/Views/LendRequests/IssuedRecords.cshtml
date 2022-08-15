@@ -6,12 +6,53 @@
  
 }
 
+@* to add view of navbar in IssuedRecords page*@
+
+<style>
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+     list-style-type: none;
+      margin-top:2px;
+      padding: 0;
+}
+
+    .navbar a {
+        display: block;
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+</style>
+
+
+  <div class="navbar"> 
+            <a class="nav-link "  role="button" asp-controller="LendRequests" asp-action="IssuedRecords" aria-haspopup="true" aria-expanded="false">
+                       Issued books
+                     </a>
+
+        <a class="nav-link" asp-controller="Books" asp-action="UserDash" role="button"  aria-haspopup="true" aria-expanded="false">
+                       View books
+                     </a>
+
+           <a class="nav-link" asp-controller="LendRequests" asp-action="AllRequests" role="button"  aria-haspopup="true" aria-expanded="false">
+                       Records
+                     </a>
+
+        </div>
+
+
+ 
+
+
+
+
 <h1>Index</h1>
 
-
-@*<p>
-    <a asp-action="Create">Create New</a>
-</p>*@
 
 <table class="table">
     <thead>
