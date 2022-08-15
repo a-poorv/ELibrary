@@ -6,12 +6,12 @@ Library Management System is a Online Library Web Application made using **ASP.N
 > For Admin :
 * Can *Approve* or *Reject* the request for any book that is requested by User.
 * Can perform CRUD operations on Account, Book, Author, Publisher tables.
-* Can View all the past Records of each user.
+* Can View all the past Records/Requests of each user.
 
 > For User:
 * Can views all the books and Request it.
 * Can view all the issued books and Return it.
-* Can view all his past Records.
+* Can view all his past Records/Requests.
 
 > Landing Page:
 
