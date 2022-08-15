@@ -4,14 +4,14 @@ Library Management System is a Online Library Web Application made using **ASP.N
 
 ### FEATURES
 > For Admin :
-*Can *Approve* or *Reject* the request for any book that is requested by User.
-*Can perform CRUD operations on Account, Book, Author, Publisher tables.
-*Can View all the past Records of each user.
+* Can *Approve* or *Reject* the request for any book that is requested by User.
+* Can perform CRUD operations on Account, Book, Author, Publisher tables.
+* Can View all the past Records of each user.
 
 > For User:
-*Can views all the books and Request it.
-*Can view all the issued books and Return it.
-*Can view all his past Records.
+* Can views all the books and Request it.
+* Can view all the issued books and Return it.
+* Can view all his past Records.
 
 > Landing Page:
 
@@ -28,17 +28,17 @@ Library Management System is a Online Library Web Application made using **ASP.N
 ## To Get Started 
 
 ### Softwares
-Microsoft Visual Studio Community 2022 (64-bit) Version 17.3.0
-Microsoft SQL Server Management Studio Version 18.2.1
-.NET Framework Version 5.0.17
+* Microsoft Visual Studio Community 2022 (64-bit) Version **17.3.0**
+* Microsoft SQL Server Management Studio Version **18.2.1**
+* .NET Framework Version **5.0.17**
 
 ### Packages
 >Inside your Visual Stdio Navigate to Tools > NuGet Package Manager > Manage NuGet Packages for Solution and install these packages
 
-Microsoft.EntityFrameworkCore Version 5.0.17
-Microsoft.EntityFrameworkCore.Design Version 5.0.17
-Microsoft.EntityFrameworkCore.Tools Version 5.0.17
-Microsoft.EntityFrameworkCore.SqlServer Version 5.0.17
+* Microsoft.EntityFrameworkCore Version **5.0.17**
+* Microsoft.EntityFrameworkCore.Design Version **5.0.17**
+* Microsoft.EntityFrameworkCore.Tools Version **5.0.17**
+* Microsoft.EntityFrameworkCore.SqlServer Version **5.0.17**
 
 ### Commands
 > Inside your Visual Stdio Navigate to 
